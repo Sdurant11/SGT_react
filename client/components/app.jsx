@@ -21,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
+        <Header grades={this.state.grades} />
         {this.state.grades.length === 0 ? (
           <div>There are no grades yet</div>
         ) : (
