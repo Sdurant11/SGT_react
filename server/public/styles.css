@@ -1,0 +1,13 @@
+.gradeAverageNumber{
+  float: right;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.title{
+  font-size: 30px
+}
+
+.badge{
+  margin-left: 5px;
+}
