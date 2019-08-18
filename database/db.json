@@ -17,6 +17,36 @@
       "course": "Web Development",
       "grade": 50,
       "id": 3
+    },
+    {
+      "name": "sam",
+      "course": "programming",
+      "grade": "65",
+      "id": 4
+    },
+    {
+      "name": "kim",
+      "course": "programming",
+      "grade": "90",
+      "id": 5
+    },
+    {
+      "name": "Tom",
+      "course": "English",
+      "grade": "76",
+      "id": 6
+    },
+    {
+      "name": "Casey",
+      "course": "Medicine",
+      "grade": "89",
+      "id": 7
+    },
+    {
+      "name": "Mars",
+      "course": "Sleeping",
+      "grade": "100",
+      "id": 8
     }
   ]
 }

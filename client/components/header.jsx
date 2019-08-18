@@ -1,8 +1,9 @@
 import React from 'react';
 
 function GetAverage(props) {
+
   var gradeNumArray = props.grades.map(studentInfoObj =>
-    studentInfoObj.grade
+    parseFloat(studentInfoObj.grade)
   );
 
   var gradeTotal = 0;
