@@ -6,6 +6,7 @@ function Grade(props) {
       <td>{props.name}</td>
       <td>{props.course}</td>
       <td>{props.grade}</td>
+      <td> <button type="button" className="btn btn-danger" onClick= {props.onClick}>Delete</button></td>
     </tr>);
 }
 
@@ -17,6 +18,7 @@ function GradeTable(props) {
           <th scope="col">Student</th>
           <th scope="col">Course</th>
           <th scope="col">Grade</th>
+          <th scope="col">Operations</th>
         </tr>
       </thead>
       <tbody>
@@ -25,6 +27,7 @@ function GradeTable(props) {
             name = {grade.name}
             course = {grade.course}
             grade = {grade.grade}
+            onClick = {props.onClick}
           />
         )}
       </tbody>
