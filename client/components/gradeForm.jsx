@@ -47,15 +47,15 @@ class GradeForm extends React.Component {
       <form className='formContainer' onSubmit={this.handleSubmit} onReset={this.resetForm}>
 
         <div className='d-flex justify-content-start'> <i className="fas fa-user icon"></i>
-          <input name='name' className="form-control" type="text" placeholder="Name" onChange={this.handleChange}></input>
+          <input required name='name' className="form-control" type="text" placeholder="Name" onChange={this.handleChange}></input>
         </div>
 
         <div className='d-flex'> <i className="fas fa-book icon"></i>
-          <input name='course' className="form-control" type="text" placeholder="Course" onChange={this.handleChange}></input>
+          <input required name='course' className="form-control" type="text" placeholder="Course" onChange={this.handleChange}></input>
         </div>
 
         <div className='d-flex'> <i className="fas fa-award icon"></i>
-          <input name='grade' className="form-control" type="text" placeholder="Grade" onChange={this.handleChange}></input>
+          <input required name='grade' className="form-control" type="text" placeholder="Grade" onChange={this.handleChange}></input>
         </div>
 
         <div className='buttonContainer'>

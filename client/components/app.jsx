@@ -9,6 +9,7 @@ class App extends React.Component {
     this.state = {
       grades: []
     };
+    this.deleteStudent = this.deleteStudent.bind(this);
   }
 
   componentDidMount() {
@@ -17,6 +18,20 @@ class App extends React.Component {
       .then(response => {
         this.setState({ grades: response });
       });
+  }
+
+  deleteStudent(event) {
+    /*
+    var deletedStudentIndex = this.state.grades.findIndex(grade => {
+      return grade.id === clickedID;
+    });
+
+    var updatedStudentList = this.state.grades.splice(deletedStudentIndex, 1);
+     var req = {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({  })
+    }; */
   }
 
   addNewStudent(newStudentInfo) {
@@ -42,7 +57,7 @@ class App extends React.Component {
           {this.state.grades.length === 0 ? (
             <div>There are no grades yet</div>
           ) : (
-            <GradeTable grades={this.state.grades} />
+            <GradeTable grades={this.state.grades} onClick = {this.deleteStudent}/>
           )}
           <GradeForm onSubmit={this.addNewStudent}/>
         </div>
